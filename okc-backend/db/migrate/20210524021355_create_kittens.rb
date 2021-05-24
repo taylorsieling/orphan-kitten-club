@@ -1,6 +1,6 @@
-class CreateCats < ActiveRecord::Migration[6.1]
+class CreateKittens < ActiveRecord::Migration[6.1]
   def change
-    create_table :cats do |t|
+    create_table :kittens do |t|
       t.string :name
       t.string :sex
       t.integer :age
@@ -19,6 +19,7 @@ class CreateCats < ActiveRecord::Migration[6.1]
       t.string :status
       t.string :current_location
       t.string :description
+      t.string :portrait_url
       t.timestamps
     end
   end

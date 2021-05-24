@@ -10,9 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_24_021355) do
+ActiveRecord::Schema.define(version: 2021_05_24_042345) do
 
-  create_table "cats", force: :cascade do |t|
+  create_table "applications", force: :cascade do |t|
+    t.integer "kitten_id"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "phone"
+    t.string "housing"
+    t.boolean "children"
+    t.boolean "employment"
+    t.string "work_from_home"
+    t.string "hours_unattended"
+    t.string "experience"
+    t.string "kitten_type"
+    t.boolean "give_medication"
+    t.boolean "provide_food"
+    t.string "current_pets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["kitten_id"], name: "index_applications_on_kitten_id"
+  end
+
+  create_table "kittens", force: :cascade do |t|
     t.string "name"
     t.string "sex"
     t.integer "age"
@@ -31,6 +52,7 @@ ActiveRecord::Schema.define(version: 2021_05_24_021355) do
     t.string "status"
     t.string "current_location"
     t.string "description"
+    t.string "portrait_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
