@@ -1,3 +1,9 @@
 // code for combining reducers
-import { CombineReducers } from 'Redux';
+import { combineReducers, CombineReducers } from 'Redux';
 import kittenReducer from './kittenReducer'
+
+const rootReducer = combineReducers({
+    kittenReducer
+})
+
+export default rootReducer
