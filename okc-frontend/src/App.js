@@ -1,13 +1,15 @@
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import './App.css';
-import CreateIntake from './components/CreateIntake'
 
-function App() {
-  return (
-    <div className="App">
-       <CreateIntake>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
 }
 
 export default App;
