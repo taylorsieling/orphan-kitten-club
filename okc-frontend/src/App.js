@@ -13,4 +13,11 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    kittens: state.kittenReducer.kittens,
+    loading: state.kittenReducer.loading
+  }
+}
+
+export default connect(mapStateToProps)(App);
