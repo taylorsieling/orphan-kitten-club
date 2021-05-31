@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Home } from './containers/Home'
+import { Kittens } from './containers/Kittens'
+import { About } from './containers/About'
 import Navigation from './components/Navigation'
 import './App.css';
 
@@ -16,13 +18,12 @@ class App extends Component {
         <hr/>
         
         <div className="App">
-          <h1>Orphan Kitten Club</h1>
+          <h1>Knittin' Kitten Foster</h1>
 
           <Switch>
             <Route exact path='/' component={ Home }></Route>
-            {/* <Route exact path='/about' component={ About }>About</Route>
-            <Route exact path='/kittens' component={ Kittens }>Kittens</Route>
-            <Route exact path='/admin' component={ Kittens }>Admin Login</Route> */}
+            <Route exact path='/about' component={ About }></Route>
+            <Route exact path='/kittens' component={ Kittens }></Route>
           </Switch>
         </div>
 
