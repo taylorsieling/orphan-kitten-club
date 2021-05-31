@@ -15,6 +15,14 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Poppins', 'Veranda', sans-serif;
 }
 
+div {
+  padding: 10px;
+}
+
+.navbar {
+  text-align: center;
+}
+
 .app-header {
   display: block;
   padding: 30px;
