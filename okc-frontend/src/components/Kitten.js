@@ -1,9 +1,14 @@
 import React from 'react'
+import '../index.css'
 
-const Kitten = (props) => {
+const Kitten = ({kitten}) => {
     return (
         <div>
-            <h4>I am the Kitten Component</h4>
+            <div>
+                <h3>{kitten.name}</h3>
+                <h4>{kitten.sex}</h4>
+                <h4>{kitten.age} Weeks</h4>
+            </div>
         </div>
     )
 }

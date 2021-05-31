@@ -10,13 +10,18 @@ class Kittens extends Component {
         this.props.fetchKittens()
     }
 
+
+
     render() {
-        const kittens = this.props.kittens.map((kitten, i) => <li key={i}>{kitten.name}</li>)
         return (
             <div>
                 <h3>Welcome! This is the Kitten Index Page!</h3>
-                {kittens}
-                <Kitten />
+                {/* Filter/Search Component */}
+                {this.props.kittens.map((kitten => {
+                   return (
+                   <Kitten key={kitten.id} kitten={kitten} />
+                   )}
+                ))}
             </div>
         )
     }
