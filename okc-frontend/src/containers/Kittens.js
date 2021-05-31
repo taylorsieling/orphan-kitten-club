@@ -16,12 +16,14 @@ class Kittens extends Component {
         return (
             <div>
                 <h3>Welcome! This is the Kitten Index Page!</h3>
-                {/* Filter/Search Component */}
-                {this.props.kittens.map((kitten => {
-                   return (
-                   <Kitten key={kitten.id} kitten={kitten} />
-                   )}
-                ))}
+                <div className="wrapper">
+                    {/* Filter/Search Component */}
+                    {this.props.kittens.map((kitten => {
+                    return (
+                    <Kitten key={kitten.id} kitten={kitten} />
+                    )}
+                    ))}
+                </div>
             </div>
         )
     }

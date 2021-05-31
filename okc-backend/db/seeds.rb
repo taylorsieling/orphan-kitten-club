@@ -25,7 +25,7 @@ poppy = Kitten.create({
     status: "Unavailable",
     current_location: "Foster Home",
     description: "Two-week old kitten",
-    portrait_url: "https://imgur.com/a/fMTTc1J"
+    portrait_url: "https://i.imgur.com/3Cq854O.jpg"
 })
 
 rosie = Kitten.create({
@@ -47,5 +47,5 @@ rosie = Kitten.create({
     status: "Unavailable",
     current_location: "Foster Home",
     description: "Two-week old kitten",
-    portrait_url: "https://imgur.com/a/Gbmez6q"
+    portrait_url: "https://i.imgur.com/h2jxzUI.jpg"
 })

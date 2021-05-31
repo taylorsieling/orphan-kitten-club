@@ -89,7 +89,7 @@ div {
     margin-top: 0;
   }
 
-  .card {
+  /* .card {
     margin: 60px 30px;
     display: inline-block;
 
@@ -98,10 +98,89 @@ div {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
     }
-  }
+  } */
 }
 
+  /* CARDS */
 
+  .card {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    box-sizing: border-box;
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .cardimg {
+    display: block;
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    }
+  
+  .card-header {
+    display: flow-root;
+    color: black;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-body {
+    display: flow-root;
+    text-align: left;  
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .card-footer {
+    text-align: center;
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  /* ROWS AND COLUMNS */
+/* 
+  .row {
+    list-style: none;
+    margin: 2em;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+    height: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+/* 
+  .column {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  } */
+
+  /* GRID */
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .wrapper > div {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+  }
 /* 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
