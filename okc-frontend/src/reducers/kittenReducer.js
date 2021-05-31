@@ -5,6 +5,12 @@ const kittens = (state = { kittens: [], loading: false}, action) => {
                 ...state,
                 loading: true
             }
+        case "KITTENS_LOADED":
+            return {
+                ...state, 
+                kittens: action.payload,
+                loading: false
+            }
         default:
             return state
     }
