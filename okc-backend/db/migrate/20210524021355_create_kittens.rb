@@ -3,7 +3,7 @@ class CreateKittens < ActiveRecord::Migration[6.1]
     create_table :kittens do |t|
       t.string :name
       t.string :sex
-      t.integer :age
+      t.string :age
       t.date :dob
       t.string :weight
       t.string :breed

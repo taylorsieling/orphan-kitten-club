@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_05_24_042345) do
   create_table "kittens", force: :cascade do |t|
     t.string "name"
     t.string "sex"
-    t.integer "age"
+    t.string "age"
     t.date "dob"
     t.string "weight"
     t.string "breed"
