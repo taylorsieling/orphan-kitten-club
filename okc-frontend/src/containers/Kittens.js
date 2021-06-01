@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Kitten from '../components/Kitten'
 import { connect } from 'react-redux'
 import { fetchKittens } from '../actions/kittens'
+import KittenForm from './KittenForm'
 
 class Kittens extends Component {
 
@@ -25,6 +26,7 @@ class Kittens extends Component {
                         )}
                         ))}
                     </div>
+                    <KittenForm/>
                 </>
             )
         }
