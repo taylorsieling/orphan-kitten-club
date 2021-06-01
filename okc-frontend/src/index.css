@@ -48,7 +48,7 @@ a:link, a:visited {
   border-radius: 5px;
   font-family: inherit;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
   text-decoration: none;
   color: #fff;
@@ -56,8 +56,9 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: #CFE1D6;
+  font-weight: bold;
 }
+
 
 #root {
   padding: 0;
@@ -68,24 +69,27 @@ a:hover, a:active {
   text-align: center;
 }
 
-.home {
+.home, .about, .kittens {
   padding: 80px 0px;
   margin: 0;
-  background-color: #bdd1c5;
   color: #fff;
   align-items: center;
 }
 
-.home, .about > h1 {
+.home .about > h1 {
   text-shadow: 1px 1px #eeeeee;
 }
 
+.home {
+  background-color: #bdd1c5;
+}
+
 .about {
-  padding: 80px 0px;
-  margin: 0;
   background-color: #f9d7bc ;
-  color: #fff;
-  align-items: center;
+}
+
+.kittens {
+  background-color: #b6dee5 ;
 }
 
 .footer {

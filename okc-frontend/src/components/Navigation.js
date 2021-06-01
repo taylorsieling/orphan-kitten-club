@@ -6,7 +6,7 @@ const navbar = {
     padding: '15px',
     textDecoration: 'none',
     fontWeight: 'bold',
-    color: '#bdd1c5',
+    color: '#7b7167',
 }
 
 const Navigation = () => {
@@ -19,7 +19,7 @@ const Navigation = () => {
                 activeStyle={{
                     textdecoration: 'underline',
                     fontWeight: 'bold',
-                    color: '#7b7167'
+                    color: '#bdd1c5'
                 }}
             >
             HOME
@@ -32,7 +32,7 @@ const Navigation = () => {
                 activeStyle={{
                     textdecoration: 'underline',
                     fontWeight: 'bold',
-                    color: '#7b7167'
+                    color: '#f9d7bc '
                 }}
             >
             ABOUT
@@ -45,7 +45,7 @@ const Navigation = () => {
                 activeStyle={{
                     textdecoration: 'underline',
                     fontWeight: 'bold',
-                    color: '#7b7167'
+                    color: '#b6dee5'
                 }}
             >
             KITTENS

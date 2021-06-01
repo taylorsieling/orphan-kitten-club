@@ -5,7 +5,7 @@ export const About = () => {
         <div>
              <div className="about">
                 <div className="home-text">
-                    <h3>Saving the Tiniest Lives</h3>
+                    <h3>Rescuing, Fostering, & Educating</h3>
                     <h1>Knittin' Kitten Foster</h1>
                     <p><a href="https://orphankittenclub.org/donate/" target="_blank">Donate</a></p>
                 </div>

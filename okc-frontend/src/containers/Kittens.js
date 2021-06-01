@@ -17,6 +17,14 @@ class Kittens extends Component {
         } else {
             return (
                 <>
+                    <div className="kittens">
+                        <div className="home-text">
+                            <h3>Give a Kitten a Forever Home</h3>
+                            <h1>Knittin' Kitten Foster</h1>
+                            <p><a href="https://orphankittenclub.org/donate/" target="_blank">Donate</a></p>
+                        </div>
+                    </div>
+
                     <h2>Our Current Kittens</h2>
                     <div className="wrapper">
                         {/* Filter/Search Component */}
