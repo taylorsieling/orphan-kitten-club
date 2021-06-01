@@ -11,8 +11,9 @@ const Kitten = ({kitten}) => {
                 <p className="kitten-status">{kitten.status}</p>
                 <h2 className="kitten-name">{kitten.name}</h2>
                 <p className="kitten-desc">
-                    {kitten.sex} | {kitten.age} Weeks Old<br/>
-                    {kitten.description}
+                    Sex: {kitten.sex}<br/>
+                    Age: {kitten.age} Weeks<br/>
+                    {kitten.breed} - {kitten.pattern}
                 </p>
             </div>
         </div>
