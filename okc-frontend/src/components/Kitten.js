@@ -3,16 +3,17 @@ import '../index.css'
 
 const Kitten = ({kitten}) => {
     return (
-        <div className="one">
-            <div className="card">
-                <div className="card-hearder">
-                    <img className="cardimg" src={kitten.portrait_url} alt={kitten.name} width="100"/>
-                </div>
-                <div className="card-body">
-                    <h3>{kitten.name}</h3>
-                    <h4>{kitten.sex}</h4>
-                    <h4>{kitten.age} Weeks</h4>
-                </div>
+        <div className="card">
+           <div className="card-header">
+                <img className="cardimg" src={kitten.portrait_url} alt={kitten.name} width="100"/>
+            </div>
+            <div className="card-body">
+                <p className="kitten-status">{kitten.status}</p>
+                <h2 className="kitten-name">{kitten.name}</h2>
+                <p className="kitten-desc">
+                    {kitten.sex} | {kitten.age} Weeks Old<br/>
+                    {kitten.description}
+                </p>
             </div>
         </div>
     )
