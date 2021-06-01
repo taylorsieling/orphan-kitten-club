@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home } from './containers/Home'
+import Home from './components/Home'
 import Kittens from './containers/Kittens'
 import { About } from './containers/About'
 import { Admin } from './containers/Admin'
@@ -16,18 +16,15 @@ class App extends Component {
         <div className="navbar">
         <Navigation />
         </div>
-        <hr/>
         
-        <div className="App">
-          <h1>Knittin' Kitten Foster</h1>
-
+        <>
           <Switch>
             <Route exact path='/' component={ Home }></Route>
             <Route exact path='/about' component={ About }></Route>
             <Route exact path='/kittens' component={ Kittens }></Route>
             <Route exact path='/admin' component={ Admin }></Route>
           </Switch>
-        </div>
+        </>
 
       </Router>
     )
