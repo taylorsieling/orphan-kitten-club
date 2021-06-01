@@ -10,8 +10,6 @@ class Kittens extends Component {
         this.props.fetchKittens()
     }
 
-
-
     render() {
         return (
             <div>

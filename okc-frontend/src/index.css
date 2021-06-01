@@ -11,12 +11,24 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+div {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6{
   font-family: 'Poppins', 'Veranda', sans-serif;
 }
 
-div {
-  padding: 10px 0px 10px 0px;
+h1 {
+  font-family: 'Poppins', 'Veranda', sans-serif;
+  font-size: 52px;
+  margin: 0;
+}
+
+p {
+  font-weight: 200;
+  opacity: 0.5;
 }
 
 #root {
@@ -46,84 +58,6 @@ div {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000;
-}
-
-.app-header {
-  display: block;
-  padding: 30px;
-}
-
-.app-title {
-  display: inline-block;
-  width: 100%;
-  margin: 80px 0 0 0;
-  float: left;
-  position: relative;
-  color: #fff;
-  
-
-  @media (min-width: 768px) {
-    width: 20%;
-    margin: 280px 0 0 0;
-  }
-
-  h1 {
-    font-family: 'Poppins', 'Veranda', sans-serif;
-    font-size: 52px;
-    margin: 0;
-  }
-
-  p {
-    font-weight: 200;
-    opacity: 0.5;
-  }
-}
-
-.app-title-content {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-
-  @media (min-width: 768px) {
-    width: auto;
-    position: absolute;
-    text-align: left;
-  }
-}
-
-.app-card-list {
-  display: inline-block;
-  width: 100%;
-  float: right;
-  margin: 0;
-  min-height: 75vh;
-  white-space: normal;
-  overflow-x: scroll;
-  margin-top: -70px;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  @media (min-width: 768px) {
-    width: 80%;
-    white-space: nowrap;
-    margin-top: 0;
-  }
-
-  /* .card {
-    margin: 60px 30px;
-    display: inline-block;
-
-    .card-body {
-      white-space: normal;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-    }
-  } */
 }
 
   /* CARDS */
@@ -190,31 +124,6 @@ div {
   }
 
   /* ROWS AND COLUMNS */
-/* 
-  .row {
-    list-style: none;
-    margin: 2em;
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
-    height: 100%;
-  }
-  
-  /* Clear floats after the columns */
-  /* .row:after {
-    content: "";
-    clear: both;
-    display: table;
-  } */
-/* 
-  .column {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  } */
-
-  /* GRID */
 
   .wrapper {
     display: flex;
@@ -227,8 +136,4 @@ div {
     margin: 10px;
     width: 300px;
   }
-/* 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+

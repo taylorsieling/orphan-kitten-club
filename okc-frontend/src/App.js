@@ -16,6 +16,7 @@ class App extends Component {
         <div className="navbar">
         <Navigation />
         </div>
+        <hr/>
         
         <>
           <Switch>
