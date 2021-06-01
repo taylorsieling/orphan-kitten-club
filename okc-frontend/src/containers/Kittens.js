@@ -10,18 +10,30 @@ class Kittens extends Component {
         this.props.fetchKittens()
     }
 
+    handleLoading = () => {
+        if (this.props.loading) {
+            return (<h3>Herding the kittens... one moment please!</h3>)
+        } else {
+            return (
+                <>
+                    <h2>Our Current Kittens</h2>
+                    <div className="wrapper">
+                        {/* Filter/Search Component */}
+                        {this.props.kittens.map((kitten => {
+                        return (
+                        <Kitten key={kitten.id} kitten={kitten} />
+                        )}
+                        ))}
+                    </div>
+                </>
+            )
+        }
+    }
+
     render() {
         return (
             <div>
-                <h3>Welcome! This is the Kitten Index Page!</h3>
-                <div className="wrapper">
-                    {/* Filter/Search Component */}
-                    {this.props.kittens.map((kitten => {
-                    return (
-                    <Kitten key={kitten.id} kitten={kitten} />
-                    )}
-                    ))}
-                </div>
+                {this.handleLoading()}
             </div>
         )
     }
