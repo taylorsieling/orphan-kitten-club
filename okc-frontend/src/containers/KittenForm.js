@@ -86,8 +86,8 @@ export default class KittenForm extends Component {
                     </div>
                     <div className="wrapper">
                         <div>
-                            <label>Intake Date: </label>
-                            <input type="date" value={this.state.date} name="date" onChange={this.handleChange}/>
+                            <label>Intake Type: </label>
+                            <input type="" value={this.state.date} name="date" onChange={this.handleChange}/>
                         </div>
                         <div>
                             <label>Intake Time: </label>
