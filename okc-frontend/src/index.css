@@ -40,7 +40,7 @@ p {
   font-weight: 200;
 }
 
-button {
+a:link, a:visited {
   margin: 4px;
   padding: 6px 18px;
   border: 2px solid white;
@@ -49,8 +49,13 @@ button {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  text-decoration: none;
   color: #fff;
   background: none;
+}
+
+a:hover, a:active {
+  background-color: #CFE1D6;
 }
 
 #root {
@@ -73,6 +78,12 @@ button {
 
 .home > h1 {
   text-shadow: 2px 1px #eeeeee;
+}
+
+.footer {
+  padding: 20px 0px;
+  background-color: #727375;
+  color: #fff;
 }
 
 .hero-wrap {
