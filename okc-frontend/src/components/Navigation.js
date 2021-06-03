@@ -58,7 +58,7 @@ const Navigation = () => {
                 activeStyle={{
                     textdecoration: 'underline',
                     fontWeight: 'bold',
-                    color: '#7b7167'
+                    color: '#C4dcdf'
                 }}
             >
             ADMIN

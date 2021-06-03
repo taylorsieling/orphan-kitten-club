@@ -89,7 +89,7 @@ a:hover, a:active {
 }
 
 .kittens {
-  background-color: #b6dee5 ;
+  background-color: #C4dcdf;
 }
 
 .footer {
@@ -180,6 +180,7 @@ a:hover, a:active {
   /* ROWS AND COLUMNS */
 
   .wrapper {
+    margin: 30px 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

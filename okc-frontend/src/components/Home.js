@@ -6,7 +6,7 @@ const Home = () => {
 
             <div className="home">
                 <div>
-                    <h3>Saving the Tiniest Lives</h3>
+                    <h2>Saving the Tiniest Lives</h2>
                     <h1>Knittin' Kitten Foster</h1>
                     <p><a href="https://orphankittenclub.org/donate/" target="_blank">Donate</a></p>
                 </div>

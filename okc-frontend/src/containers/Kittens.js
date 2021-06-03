@@ -19,7 +19,7 @@ class Kittens extends Component {
                 <>
                     <div className="kittens">
                         <div className="home-text">
-                            <h3>Give a Kitten a Forever Home</h3>
+                            <h2>Give a Kitten a Forever Home</h2>
                             <h1>Knittin' Kitten Foster</h1>
                             <p><a href="https://orphankittenclub.org/donate/" target="_blank">Donate</a></p>
                         </div>
