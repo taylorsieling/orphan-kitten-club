@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { LoginForm } from '../components/LoginForm'
+// import { LoginForm } from '../components/LoginForm'
+import { login } from '../actions/login'
+// import { Redirect } from 'react-router-dom'
 
 
 class Login extends Component {
@@ -13,28 +15,41 @@ class Login extends Component {
     // pass down email and password to form component via state/props
 
     handleChange = event => {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
+        console.log(event.target.value)
+        this.setState({ [event.target.name]: event.target.value })
     }
 
     handleSubmit = event => {
         //pass submitted data to props
         event.preventDefault()
+        console.log(this.state)
+        const { email, password } = this.state
+        const credentials = { email, password }
+        this.props.login(credentials)
     }
 
     render() {
         return (
             <div>
-                <LoginForm email={this.state.email} password={this.state.password} onChange={this.handleChange} onSubmit={this.handleSubmit}/>
+                <form onSubmit={this.handleSubmit}>
+                    <input type="text" name="email" id="email" placeholder="Email" onChange={this.handleChange}/>
+                    <input type="password" name="password" id="password"  placeholder="Password" onChange={this.handleChange}/>
+                    <input type="submit" />
+                </form>
             </div>
         )
     }
 
 }
 
-const mapStateToProps = ({ users }) => {
-    
-}
+// const mapStateToProps = ({ users }) => {
+//     return {
+//         loggedIn: users.valid
+//     }
+// }
 
-export default connect(mapStateToProps)(Login)
+const mapDispatchtoProps = dispatch => ({
+        login: (credentials) => dispatch(login(credentials))
+})
+
+export default connect(null, mapDispatchtoProps)(Login)

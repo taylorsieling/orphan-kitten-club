@@ -7,7 +7,7 @@ export const About = () => {
                 <div className="home-text">
                     <h2>Rescuing, Fostering, & Educating</h2>
                     <h1>Knittin' Kitten Foster</h1>
-                    <p><a href="https://orphankittenclub.org/donate/" target="_blank">Donate</a></p>
+                    <p><a href="https://orphankittenclub.org/donate/">Donate</a></p>
                 </div>
             </div>
 

@@ -208,7 +208,17 @@ a:hover, a:active {
   /* FORM */
 
   input[type=text] {
-    width: 100%;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  input[type=password] {
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;

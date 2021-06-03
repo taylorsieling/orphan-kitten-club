@@ -13,7 +13,18 @@ class Kittens extends Component {
 
     handleLoading = () => {
         if (this.props.loading) {
-            return (<h3>Herding the kittens... one moment please!</h3>)
+            return (
+                <div>
+                    <div className="kittens">
+                    <div className="home-text">
+                        <h2>Give a Kitten a Forever Home</h2>
+                        <h1>Knittin' Kitten Foster</h1>
+                        <p><a href="https://orphankittenclub.org/donate/">Donate</a></p>
+                    </div>
+                </div>
+                <div><h2>Herding the kittens... one moment please!</h2></div>
+            </div>
+            )
         } else {
             return (
                 <>
@@ -21,7 +32,7 @@ class Kittens extends Component {
                         <div className="home-text">
                             <h2>Give a Kitten a Forever Home</h2>
                             <h1>Knittin' Kitten Foster</h1>
-                            <p><a href="https://orphankittenclub.org/donate/" target="_blank">Donate</a></p>
+                            <p><a href="https://orphankittenclub.org/donate/">Donate</a></p>
                         </div>
                     </div>
 

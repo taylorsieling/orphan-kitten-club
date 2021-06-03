@@ -8,7 +8,7 @@ const Home = () => {
                 <div>
                     <h2>Saving the Tiniest Lives</h2>
                     <h1>Knittin' Kitten Foster</h1>
-                    <p><a href="https://orphankittenclub.org/donate/" target="_blank">Donate</a></p>
+                    <p><a href="https://orphankittenclub.org/donate/">Donate</a></p>
                 </div>
             </div>
 
